@@ -134,7 +134,8 @@ layout {
 ///                      init_niri                      /// 
 ///=====================================================/// 
 spawn-at-startup "swww-daemon"
-spawn-at-startup "sh" "-c" "~/.config/hypr/random_imagen.sh"
+spawn-sh-at-startup "~/.config/hypr/random_imagen.sh"
+// spawn-at-startup "sh" "-c" "~/.config/hypr/random_imagen.sh"
 
 // Esta bandera hará que niri solicite a las aplicaciones que omitan sus decoraciones del lado del cliente.
 prefer-no-csd
