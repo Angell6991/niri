@@ -141,6 +141,7 @@ spawn-sh-at-startup "~/.config/hypr/random_imagen.sh"
 prefer-no-csd
 
 environment {
+    GTK_THEME "Graphite-green-Dark"
     QT_QPA_PLATFORM "wayland"
     DISPLAY "0"
 }
@@ -186,10 +187,65 @@ animations {
 ///=====================================================///                
 ///                     window-rule                     /// 
 ///=====================================================/// 
+
+workspace "terminal"
+workspace "see_document"
+workspace "floating_windows"
+workspace "writing"
+
 window-rule {
     geometry-corner-radius 10
     clip-to-geometry true
 }
+
+// view app-id: niri msg windows
+window-rule {
+    match   app-id="kitty"
+    match   app-id="firefox"
+    
+    open-on-workspace   "terminal"
+}
+
+window-rule {
+    match   app-id="org.pwmt.zathura"
+    
+    open-on-workspace   "see_document"
+}
+
+window-rule {
+    match	app-id="org.matplotlib.Matplotlib3"
+    match	app-id="Matplotlib"
+    match	app-id="Tk"
+    match	app-id="eog"
+    match	app-id="org.gnome.eog"
+    match	app-id="python3.12"
+    match	app-id="blueman-manager"
+    match	app-id="org.pulseaudio.pavucontrol"
+    match	app-id="org.gnome.clocks"
+    match	app-id="org.gnome.Calendar"
+    match	app-id="mpv"
+    match	app-id="org.telegram.desktop"
+    match	app-id="python3.13"
+    match	app-id="com.usebottles.bottles"
+    match	app-id="io.bassi.Amberol"
+    match	app-id="flet"
+
+    open-on-workspace   "floating_windows"
+    // open-floating   true
+}
+window-rule {
+    match	app-id="Lightdm-gtk-greeter-settings"
+    match	app-id="com.github.xournalpp.xournalpp"
+    match	app-id="org.libretro.RetroArch"
+    match	app-id="com.libretro.RetroArch"
+    match	app-id="gimp"
+    match	app-id="draw.io"
+    match	app-id="fontforge"
+    match	app-id="org.inkscape.Inkscape"
+
+    open-on-workspace   "writing"
+}
+
 
 ///=====================================================///                
 ///                     keys_binds                      /// 
