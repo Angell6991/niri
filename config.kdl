@@ -187,7 +187,6 @@ animations {
 ///=====================================================///                
 ///                     window-rule                     /// 
 ///=====================================================/// 
-
 workspace "terminal"
 workspace "see_document"
 workspace "floating_windows"
@@ -204,12 +203,14 @@ window-rule {
     match   app-id="firefox"
     
     open-on-workspace   "terminal"
+    open-focused    true
 }
 
 window-rule {
     match   app-id="org.pwmt.zathura"
     
     open-on-workspace   "see_document"
+    open-focused    true
 }
 
 window-rule {
@@ -231,6 +232,7 @@ window-rule {
     match	app-id="flet"
 
     open-on-workspace   "floating_windows"
+    open-focused    true
     // open-floating   true
 }
 window-rule {
@@ -244,6 +246,7 @@ window-rule {
     match	app-id="org.inkscape.Inkscape"
 
     open-on-workspace   "writing"
+    open-focused    true
 }
 
 
