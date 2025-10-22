@@ -134,6 +134,7 @@ layout {
 ///                      init_niri                      /// 
 ///=====================================================/// 
 spawn-at-startup "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
+spawn-at-startup "qs"
 spawn-at-startup "swww-daemon"
 spawn-sh-at-startup "~/.config/hypr/random_imagen.sh"
 // spawn-at-startup "sh" "-c" "~/.config/hypr/random_imagen.sh"
@@ -158,13 +159,12 @@ cursor {
     // hide-when-typing
 }
 
-/-overview {
-    zoom 0.25
-    zoom 0.3
-    backdrop-color "#3e3e3e"
+overview {
+    zoom 0.5
+    backdrop-color "#2f4f4f"
     workspace-shadow {
         softness 50
-        spread 10
+        spread 20
         offset x=0 y=0
         color "#2e2e2e"
     }
