@@ -135,6 +135,7 @@ layout {
 ///=====================================================/// 
 spawn-at-startup "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
 spawn-at-startup "qs"
+spawn-at-startup "hypridle"
 spawn-at-startup "swww-daemon"
 spawn-sh-at-startup "~/.config/hypr/random_imagen.sh"
 // spawn-at-startup "sh" "-c" "~/.config/hypr/random_imagen.sh"
