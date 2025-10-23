@@ -263,6 +263,8 @@ binds {
     Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
 
+    ///--------------------suspend_system-------------------///
+    Mod+Ctrl+F1{ spawn-sh "hyprlock & sleep 2 && systemctl suspend"; }
 
     ///---------------------Audio_config--------------------///
     Mod+F12{ spawn-sh "~/.config/mako/scripts/volume_01.sh"; }
