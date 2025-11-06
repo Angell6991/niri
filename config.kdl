@@ -286,6 +286,7 @@ binds {
 
     ///---------------zbarimg_for_scan_QR-------------------///
     Mod+F7{ spawn-sh "~/.config/mako/scripts/zbar_QR.sh"; }
+    Mod+F8{ spawn-sh "hyprpicker -a"; }
 
 
     ///-------------Mover_el_foco_de_las_ventanas-----------///
