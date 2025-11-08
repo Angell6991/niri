@@ -240,6 +240,7 @@ window-rule {
     match	app-id="draw.io"
     match	app-id="fontforge"
     match	app-id="org.inkscape.Inkscape"
+    match	app-id="net.lutris.Lutris"
 
     open-on-workspace   "writing"
     open-focused    true
