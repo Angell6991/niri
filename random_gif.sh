@@ -4,7 +4,7 @@
 WALLPAPER_DIR="$HOME/Imágenes/.wallpaper/gifs/"
 
 # Selecciona una imagen aleatoria (ajusta extensión si tienes otros formatos)
-WALLPAPER=$(find "$WALLPAPER_DIR" -type f \( -iname '*.jpg' -o -iname '*.png' \) | shuf -n 1)
+WALLPAPER=$(find "$WALLPAPER_DIR" -type f \( -iname '*.gif' -o -iname '*.gif' \) | shuf -n 1)
 
 # Poner el wallpaper con swww
 swww-daemon
