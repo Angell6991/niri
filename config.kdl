@@ -137,7 +137,8 @@ spawn-at-startup "dbus-update-activation-environment --systemd WAYLAND_DISPLAY X
 spawn-at-startup "sh" "-c" "qs -p ~/.config/quickshell/bar/shell.qml"
 spawn-at-startup "hypridle"
 spawn-at-startup "swww-daemon"
-spawn-sh-at-startup "~/.config/hypr/random_imagen.sh"
+// spawn-sh-at-startup "~/.config/hypr/random_imagen.sh"
+spawn-sh-at-startup "~/.config/niri/random_gif.sh"
 // spawn-at-startup "sh" "-c" "~/.config/hypr/random_imagen.sh"
 
 // Esta bandera hará que niri solicite a las aplicaciones que omitan sus decoraciones del lado del cliente.
