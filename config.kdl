@@ -83,9 +83,9 @@ input {
 ///=====================================================///  
 layout {
     gaps 10
-    center-focused-column "on-overflow"
+    center-focused-column "always"
     // center-focused-column "never"
-    // center-focused-column "always"
+    // center-focused-column "on-overflow"
     default-column-width { proportion 0.7; }
     
     preset-column-widths {
