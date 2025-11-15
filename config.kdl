@@ -202,6 +202,7 @@ window-rule {
 // view app-id: niri msg windows
 window-rule {
     match   app-id="kitty"
+    match   app-id="com.mitchellh.ghostty"
     match   app-id="firefox"
     
     open-on-workspace   "terminal"
@@ -255,7 +256,8 @@ binds {
     Mod+Shift+S { show-hotkey-overlay; }
 
     ///-----------terminal_menu_salir_close_secion----------/// 
-    Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
+    // Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
+    Mod+Return hotkey-overlay-title="Open a Terminal" { spawn "ghostty"; }
     Mod+space hotkey-overlay-title="Open: fuzzel"{ spawn "fuzzel"; }
     Mod+BackSpace repeat=false { close-window; }
     Mod+Ctrl+Q { quit; }
