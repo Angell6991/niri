@@ -275,6 +275,8 @@ binds {
     ///---------------------Audio_config--------------------///
     Mod+F12{ spawn-sh "~/.config/mako/scripts/volume_01.sh"; }
     Mod+F11{ spawn-sh "~/.config/mako/scripts/volume_02.sh"; }
+    Mod+F10{ spawn-sh "~/.config/mako/scripts/volume_03.sh"; }
+    Mod+Ctrl+F10{ spawn-sh "~/.config/mako/scripts/pause_audio.sh"; }
     
     ///---------------control_brillo_pantalla---------------///
     Mod+F6{ spawn-sh "~/.config/mako/scripts/brightness_01.sh"; }
@@ -292,6 +294,13 @@ binds {
     Mod+F7{ spawn-sh "~/.config/mako/scripts/zbar_QR.sh"; }
     Mod+F8{ spawn-sh "hyprpicker -a"; }
 
+    ///----------------Bluetooth_control--------------------///
+    // install: sudo pacman -S wev
+    // XF86AudioPlay{ spawn-sh "~/.config/mako/scripts/volume_03.sh"; }
+    XF86AudioPlay{ spawn-sh "~/.config/mako/scripts/pause_audio.sh"; }
+    XF86AudioPause{ spawn-sh "~/.config/mako/scripts/pause_audio.sh"; }
+    // XF86AudioNext
+    // XF86AudioPrev
 
     ///-------------Mover_el_foco_de_las_ventanas-----------///
     Mod+Left  { focus-column-left; }
