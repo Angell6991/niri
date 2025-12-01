@@ -296,11 +296,10 @@ binds {
 
     ///----------------Bluetooth_control--------------------///
     // install: sudo pacman -S wev
-    // XF86AudioPlay{ spawn-sh "~/.config/mako/scripts/volume_03.sh"; }
     XF86AudioPlay{ spawn-sh "~/.config/mako/scripts/pause_audio.sh"; }
     XF86AudioPause{ spawn-sh "~/.config/mako/scripts/pause_audio.sh"; }
     XF86AudioNext{ spawn-sh "hyprlock"; }
-    // XF86AudioPrev
+    XF86AudioPrev{ spawn-sh "~/.config/mako/scripts/volume_03.sh"; }
 
     ///-------------Mover_el_foco_de_las_ventanas-----------///
     Mod+Left  { focus-column-left; }
