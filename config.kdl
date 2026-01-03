@@ -146,7 +146,8 @@ spawn-sh-at-startup "~/.config/niri/random_imagen.sh"
 prefer-no-csd
 
 environment {
-    GTK_THEME "Graphite-pink-Dark"
+    GTK_THEME "Graphite-Dark"
+    // GTK_THEME "Graphite-pink-Dark"
     QT_QPA_PLATFORM "wayland"
     DISPLAY "0"
 }
@@ -156,10 +157,14 @@ xwayland-satellite {
 }
 
 cursor {
-    xcursor-theme "oreo_pink_cursors"
-    xcursor-size 48
-    hide-after-inactive-ms 5000
+    xcursor-theme "Future-dark-cursors"
+    xcursor-size 30
+    // xcursor-theme "Future-dark-cursors"
+    // xcursor-size 30
+    // xcursor-theme "oreo_pink_cursors"
+    // xcursor-size 48
     // hide-when-typing
+    hide-after-inactive-ms 5000
 }
 
 overview {
@@ -205,6 +210,7 @@ window-rule {
     match   app-id="kitty"
     match   app-id="com.mitchellh.ghostty"
     match   app-id="firefox"
+    match   app-id="localsend"
     
     open-on-workspace   "terminal"
     open-focused    true
