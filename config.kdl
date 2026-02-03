@@ -87,7 +87,7 @@ layout {
     // center-focused-column "never"
     // center-focused-column "on-overflow"
     default-column-width { proportion 0.7; }
-    
+
     preset-column-widths {
         proportion 0.3
         proportion 0.5
@@ -134,7 +134,7 @@ layout {
 ///                      init_niri                      /// 
 ///=====================================================/// 
 spawn-at-startup "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
-spawn-at-startup "sh" "-c" "qs -p ~/.config/quickshell/bar/shell.qml"
+// spawn-at-startup "sh" "-c" "qs -p ~/.config/quickshell/bar/shell.qml"
 spawn-at-startup "udiskie" 
 spawn-at-startup "hypridle"
 spawn-at-startup "swww-daemon"
@@ -169,13 +169,18 @@ cursor {
 
 overview {
     zoom 0.5
-    backdrop-color "#2f4f4f"
+    // backdrop-color "#2f4f4f"
     workspace-shadow {
         softness 50
         spread 20
         offset x=0 y=0
         color "#2e2e2e"
     }
+}
+
+layer-rule {
+    match namespace="^swww-daemonoverlay$"
+    place-within-backdrop true
 }
 
 hotkey-overlay {
@@ -277,8 +282,8 @@ binds {
 
     ///--------------------suspend_system-------------------///
     Mod+Ctrl+F1{ spawn-sh "hyprlock & sleep 2 && systemctl suspend"; }
-    Mod+Ctrl+L{ spawn-sh "quickshell -p ~/.config/quickshell/power_menu/shell.qml"; }
-    Mod+Ctrl+F9{ spawn-sh "~/.config/quickshell/lock/lock.sh"; }
+    // Mod+Ctrl+L{ spawn-sh "quickshell -p ~/.config/quickshell/power_menu/shell.qml"; }
+    // Mod+Ctrl+F9{ spawn-sh "~/.config/quickshell/lock/lock.sh"; }
 
     ///---------------------Audio_config--------------------///
     Mod+F12{ spawn-sh "~/.config/mako/scripts/volume_01.sh"; }
