@@ -1,0 +1,104 @@
+.widget_inf {
+  background-color: rgba(15, 01, 19, 0.1); 
+  padding: 4px;
+  border-radius: 10px;
+}
+
+
+//////////////////////////////////
+////    widget_inf_system     ////
+//////////////////////////////////
+
+
+// Definir una variable de color
+$color_01: rgba(29, 29, 29, 0.4);  
+$color_02: rgba(255, 255, 231); 
+// $color_02: rgba(184, 184, 184); 
+
+.box-inf-system {
+  background-color: rgba(29, 29, 29, 0.7); 
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.box-inf-system_01 {
+  background-color: $color_01; 
+  border-radius: 10px;
+  padding: 6px;
+}
+
+.box-inf-system_02 {
+  background-color: $color_01; 
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.battery-label {
+  font-size: 14px;
+  color: $color_02;
+  font-family: "Inconsolata NF";
+}
+
+.ram-label {
+  font-size: 14px;
+  color: $color_02;
+  font-family: "Inconsolata NF";
+}
+
+.CPU-inf {
+  font-size: 14px;
+  color: $color_02;
+  font-family: "Inconsolata NF";
+}
+
+.CPU-inf-temp {
+  font-size: 14px;
+  color: $color_02;
+  font-family: "Inconsolata NF";
+}
+
+.time-label{
+  font-size: 10px;
+  color: $color_02;
+  font-family: "frank";
+}
+
+.day-label{
+  font-size: 10px;
+  color: $color_02;
+  font-family: "frank";
+
+}.calendar-label{
+  font-size: 10px;
+  color: $color_02;
+  font-family: "frank";
+}
+
+//////////////////////////////////
+////-----View_workspaces------////
+//////////////////////////////////
+
+.desk-box_01 {
+  background-color: rgba(29, 29, 29, 0); 
+  padding: 8px;
+  border-radius: 10px; 
+}
+
+.desk-test {
+  font-size: 17px;
+  color: rgba(29, 29, 29);
+  font-family: "Inconsolata NF";
+}
+
+
+//////////////////////////////////
+////-----View_Separator-------////
+//////////////////////////////////
+
+.separator-text {
+  font-size: 15px;
+  color: #e2e2e2;
+  font-family: "Inconsolata NF";
+}
+
+
