@@ -29,6 +29,18 @@
     )
 )
 
+(defwidget CPU_TEMP_INF []
+    (box
+        :class "box-inf-system_01"
+        :halign "center"
+        :space-evenly "false"
+        (label
+            :class "CPU-label"
+            :text "󰻠 ${round(EWW_CPU.avg, 0)}% | 󱠇 ${EWW_TEMPS.CORETEMP_CORE_0}°C"
+        )
+    )
+)
+
 (defwidget RAM_INF []
     (box
         :class "box-inf-system_01"
@@ -122,6 +134,24 @@
     )
 )
 
+(defwidget TERMINAL []
+    (button
+        :onclick "ghostty &" 
+        :class "glass_button"
+        :tooltip "Open terminal"
+        (box
+            :class "box-inf-system_03"
+            :halign "center"
+            :space-evenly "false"
+            (label
+                :class "app-label"
+                :text " "
+            )
+        )
+    )
+)
+
+
 ;;-------------------Sepator--------------------;;
 
 (defwidget separator []
@@ -147,34 +177,33 @@
     (geometry
         :x "1%"   
         :y "10px"
-        :width "95%"
+        :width "90%"
         :height "10px"
         :anchor "top center"
     )
     (box
         :orientation "h"
         :space-evenly "true"
-        :spacing "125"
+        :spacing "100"
         (box
             :orientation "h"
             :halign "left"
             :space-evenly "false"
             :spacing "9"
+            (TERMINAL)
             (BATTERY_INF)
             (separator)
             (RAM_INF)
             (separator)
-            (CPU_TEMP)
-            (CPU_INF)
+            (CPU_TEMP_INF)
         )
         (box
-
         )
         (box
             :orientation "h"
             :halign "right"
             :space-evenly "false"
-            :spacing "10"
+            :spacing "9"
             (CALENDAR)
             (separator)
             (DAY)

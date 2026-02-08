@@ -1,7 +1,7 @@
 .widget_inf {
   background-color: rgba(15, 01, 19, 0.1); 
   padding: 4px;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 
@@ -23,7 +23,7 @@ $color_02: rgba(255, 255, 231);
 
 .box-inf-system_01 {
   background-color: $color_01; 
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 6px;
 }
 
@@ -73,6 +73,12 @@ $color_02: rgba(255, 255, 231);
   font-family: "Inconsolata NF";
 }
 
+.CPU-label {
+  font-size: 14px;
+  color: $color_02;
+  font-family: "Inconsolata NF";
+}
+
 .time-label{
   font-size: 10px;
   color: $color_02;
@@ -92,6 +98,13 @@ $color_02: rgba(255, 255, 231);
 }
 
 .power-label {
+  font-size: 15px;
+  color: $color_02;
+  font-family: "3270 Nerd Font";
+  // font-family: "Inconsolata NF";
+}
+
+.app-label {
   font-size: 15px;
   color: $color_02;
   font-family: "3270 Nerd Font";
