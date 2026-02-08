@@ -134,18 +134,18 @@
     )
 )
 
-(defwidget TERMINAL []
+(defwidget GAMES []
     (button
-        :onclick "ghostty &" 
+        :onclick "retroarch &" 
         :class "glass_button"
-        :tooltip "Open terminal"
+        :tooltip "retroarch"
         (box
             :class "box-inf-system_03"
             :halign "center"
             :space-evenly "false"
             (label
                 :class "app-label"
-                :text " "
+                :text "󰣙 "
             )
         )
     )
@@ -190,7 +190,7 @@
             :halign "left"
             :space-evenly "false"
             :spacing "9"
-            (TERMINAL)
+            (GAMES)
             (BATTERY_INF)
             (separator)
             (RAM_INF)
