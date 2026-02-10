@@ -14,38 +14,33 @@
 $color_01: rgba(29, 29, 29, 0.4);  
 $color_02: rgba(255, 255, 231); 
 
-.box-inf-system {
-  background-color: rgba(29, 29, 29, 0.7); 
-  border-radius: 10px;
-  padding: 10px;
-}
 
 .box-inf-system_00 {
   background: rgba(29, 29, 29, 0);
   border-radius: 5px;
-  padding: 5px;
+  padding: 0px;
 }
 
 .box-inf-system_01 {
   background-color: $color_01; 
   border-radius: 5px;
-  padding: 5px;
-  min-width: 50px;
+  padding: 0px;
+  min-width: 60px;
 }
 
 .box-inf-system_02 {
   background-color: $color_01; 
   border-radius: 5px;
-  padding: 5px;
-  min-width: 80px;
+  padding: 0px;
+  min-width: 90px;
 }
 
 
 .box-inf-system_03 {
   background-color: $color_01; 
   border-radius: 5px;
-  padding: 5px;
-  min-width: 120px;
+  padding: 0px;
+  min-width: 130px;
 }
 
 .glass_button {
@@ -58,46 +53,47 @@ $color_02: rgba(255, 255, 231);
   color: #00CCDE;
 }
 
+.glass_box {
+  background: rgba(255, 39, 23, 0);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
 .battery-label {
   font-size: 14px;
   color: $color_02;
   font-family: "Inconsolata NF";
-  margin: 0 .5rem 0 .5rem  ;
 }
 
 .ram-label {
   font-size: 14px;
   color: $color_02;
   font-family: "Inconsolata NF";
-  margin: 0 .5rem 0 .5rem  ;
 }
 
 .CPU-label {
   font-size: 14px;
   color: $color_02;
   font-family: "Inconsolata NF";
-  margin: 0 1rem 0 1rem  ;
 }
 
 .time-label{
   font-size: 10px;
   color: $color_02;
   font-family: "frank";
-  margin: 0 .5rem 0 .5rem  ;
 }
 
 .day-label{
   font-size: 10px;
   color: $color_02;
   font-family: "frank";
-  margin: 0 1.5rem 0 1.5rem  ;
 }
 
 .calendar-label{
   font-size: 10px;
   color: $color_02;
   font-family: "frank";
-  margin: 0 1rem 0 1rem  ;
 }
 
 .power-label {

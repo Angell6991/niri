@@ -10,9 +10,15 @@
         :class "box-inf-system_03"
         :halign "center"
         :space-evenly "false"
-        (label
-            :class "CPU-label"
-            :text "󰻠 ${round(EWW_CPU.avg, 0)}% | 󱠇 ${EWW_TEMPS.CORETEMP_CORE_0}°C"
+        (box
+            :class "glass_box"
+            :halign "center"
+            :hexpand "true"
+            :space-evenly "false"
+            (label
+                :class "CPU-label"
+                :text "󰻠 ${round(EWW_CPU.avg, 0)}% | 󱠇 ${EWW_TEMPS.CORETEMP_CORE_0}°C"
+            )
         )
     )
 )
@@ -22,10 +28,16 @@
         :class "box-inf-system_02"
         :halign "center"
         :space-evenly "false"
-        (label
-            :class "ram-label" 
-            ;; :text "  ${round(EWW_RAM.used_mem_perc, 0)}%"
-            :text "  ${round(EWW_RAM.used_mem / (1024 * 1024 * 1024), 1)} GB"
+        (box
+            :class "glass_box"
+            :halign "center"
+            :hexpand "true"
+            :space-evenly "false"
+            (label
+                :class "ram-label" 
+                ;; :text "  ${round(EWW_RAM.used_mem_perc, 0)}%"
+                :text "  ${round(EWW_RAM.used_mem / (1024 * 1024 * 1024), 1)} GB"
+            )
         )
     )
 )
@@ -35,9 +47,15 @@
         :class "box-inf-system_01"
         :halign "center"
         :space-evenly "false"
-        (label
-            :class "battery-label"
-            :text "${EWW_BATTERY['BAT0'].status == 'Charging' ? '󰂄' : EWW_BATTERY['BAT0'].status == 'Discharging' ? '󰂀' : EWW_BATTERY['BAT0'].status == 'Full' ? '󱈑' : EWW_BATTERY['BAT0'].status == 'Not charging' ? '󰂃': EWW_BATTERY['BAT0'].status} ${EWW_BATTERY['BAT0'].capacity}%"
+        (box
+            :class "glass_box"
+            :halign "center"
+            :hexpand "true"
+            :space-evenly "false"
+            (label
+                :class "battery-label"
+                :text "${EWW_BATTERY['BAT0'].status == 'Charging' ? '󰂄' : EWW_BATTERY['BAT0'].status == 'Discharging' ? '󰂀' : EWW_BATTERY['BAT0'].status == 'Full' ? '󱈑' : EWW_BATTERY['BAT0'].status == 'Not charging' ? '󰂃': EWW_BATTERY['BAT0'].status} ${EWW_BATTERY['BAT0'].capacity}%"
+            )
         )
     )
 )
@@ -51,9 +69,15 @@
             :class "box-inf-system_01"
             :halign "center"
             :space-evenly "false"
-            (label
-                :class "time-label"
-                :text "${formattime(EWW_TIME, '%H : %M')}"
+            (box
+                :class "glass_box"
+                :halign "center"
+                :hexpand "true"
+                :space-evenly "false"  
+                (label
+                    :class "time-label"
+                    :text "${formattime(EWW_TIME, '%H : %M')}"
+                )
             )
         )
     )
@@ -68,9 +92,15 @@
             :class "box-inf-system_02"
             :halign "center"
             :space-evenly "false"
-            (label
-                :class "day-label"
-                :text "${formattime(EWW_TIME, '%A')}"
+            (box
+                :class "glass_box"
+                :halign "center"
+                :hexpand "true"
+                :space-evenly "false"
+                (label
+                    :class "day-label"
+                    :text "${formattime(EWW_TIME, '%A')}"
+                )
             )
         )
     )
@@ -85,9 +115,15 @@
             :class "box-inf-system_03"
             :halign "center"
             :space-evenly "false"
-            (label
-                :class "calendar-label"
-                :text "${formattime(EWW_TIME, '%d | %m | %Y')}"
+            (box
+                :class "glass_box"
+                :halign "center"
+                :hexpand "true"
+                :space-evenly "false"
+                (label
+                    :class "calendar-label"
+                    :text "${formattime(EWW_TIME, '%d | %m | %Y')}"
+                )
             )
         )
     )
@@ -153,7 +189,7 @@
     (geometry
         :x "1%"   
         :y "10px"
-        :width "90%"
+        :width "80%"
         :height "10px"
         :anchor "top center"
     )
