@@ -62,48 +62,42 @@ $color_02: rgba(255, 255, 231);
   font-size: 14px;
   color: $color_02;
   font-family: "Inconsolata NF";
+  margin: 0 .5rem 0 .5rem  ;
 }
 
 .ram-label {
   font-size: 14px;
   color: $color_02;
   font-family: "Inconsolata NF";
-}
-
-.CPU-inf {
-  font-size: 14px;
-  color: $color_02;
-  font-family: "Inconsolata NF";
-}
-
-.CPU-inf-temp {
-  font-size: 14px;
-  color: $color_02;
-  font-family: "Inconsolata NF";
+  margin: 0 .5rem 0 .5rem  ;
 }
 
 .CPU-label {
   font-size: 14px;
   color: $color_02;
   font-family: "Inconsolata NF";
+  margin: 0 1rem 0 1rem  ;
 }
 
 .time-label{
   font-size: 10px;
   color: $color_02;
   font-family: "frank";
+  margin: 0 .5rem 0 .5rem  ;
 }
 
 .day-label{
   font-size: 10px;
   color: $color_02;
   font-family: "frank";
+  margin: 0 1.5rem 0 1.5rem  ;
 }
 
 .calendar-label{
   font-size: 10px;
   color: $color_02;
   font-family: "frank";
+  margin: 0 1rem 0 1rem  ;
 }
 
 .power-label {
