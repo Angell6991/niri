@@ -196,7 +196,7 @@
     (box
         :orientation "h"
         :space-evenly "true"
-        ;;:spacing "90"
+        :spacing "40"
         (box
             :orientation "h"
             :halign "left"
