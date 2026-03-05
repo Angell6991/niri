@@ -9,7 +9,7 @@
         (box 
             :class "gif-container_01"
             (image
-                :path   "adjutora_small.gif"
+                :path   "adjutora_gif.gif"
             ) 
         )
     )
