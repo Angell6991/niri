@@ -30,7 +30,7 @@
         :y "15px" 
         :width "5%" 
         :height "30px"
-        :anchor "bottom right"
+        :anchor "top right"
     )
     (box
         :orientation "v" 
