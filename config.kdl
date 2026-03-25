@@ -135,10 +135,9 @@ layout {
 ///=====================================================/// 
 spawn-at-startup "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
 spawn-at-startup "sh" "-c" "~/.eww/target/release/eww -c ~/.config/niri/widget_eww/widget_inf_system open widget_inf" 
-spawn-at-startup "sh" "-c" "~/.eww/target/release/eww -c ~/.config/niri/widget_eww/widget_starcarft  open adjutora-icon-glass" 
 spawn-at-startup "udiskie" 
 spawn-at-startup "hypridle"
-spawn-at-startup "swww-daemon"
+spawn-at-startup "awww-daemon"
 spawn-sh-at-startup "~/.config/niri/random_imagen.sh"
 // spawn-at-startup "sh" "-c" "qs -p ~/.config/quickshell/bar/shell.qml
 // spawn-sh-at-startup "~/.config/niri/random_gif.sh"
@@ -184,7 +183,7 @@ overview {
 }
 
 layer-rule {
-    match namespace="^swww-daemonoverlay$"
+    match namespace="^awww-daemonoverlay$"
     place-within-backdrop true
 }
 

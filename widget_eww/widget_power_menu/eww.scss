@@ -4,13 +4,19 @@
   border-radius: 10px;
 }
 
+// Definir una variable de color
+$color_01: rgba(28, 27, 34, 0.9);  
+$color_02: rgba(255, 255, 231); 
+
+
 //////////////////////////////
 ////      power_box       ////
 //////////////////////////////
 .box-power {
-  background-color: rgba(29, 29, 29, 0.5);
+  background-color: rgba(0, 36, 36, 0.2); 
   padding: 30px;
   border-radius: 10px;
+  border: 2px outset #002424;
 }
 
 .box-glass {
@@ -27,7 +33,7 @@
 
 ////------config_butons---////
 .button-power {
-  background: rgba(29, 29, 29, 0.7);
+  background: $color_01;
   // box-shadow: none;
   border: 2px solid transparent;
   border-color: #010101;
@@ -36,6 +42,7 @@
   color: #00CCDE;
   font-family: "Inconsolata NF";
   border-radius: 10px;
+  border: 3px outset #1c1b22;
 }
 
 .button-cancel {
@@ -54,7 +61,7 @@
 ////---config_text_of_butons---////
 .close-secion{
   font-size: 60px;
-  color: #B8B8B8;
+  color: $color_02;
   // color: #9821D0;
   font-family: "3270 Nerd Font";
   // font-family: "Inconsolata NF";
@@ -63,7 +70,7 @@
 
 .reboot{
   font-size: 60px;
-  color: #B8B8B8;
+  color: $color_02;
   font-family: "3270 Nerd Font";
   // font-family: "Inconsolata NF";
   text-shadow: none;
@@ -71,7 +78,7 @@
 
 .suspend{
   font-size: 60px;
-  color: #B8B8B8;
+  color: $color_02;
   // color: #00CCDE;
   font-family: "3270 Nerd Font";
   text-shadow: none;
@@ -79,7 +86,7 @@
 
 .poweroff{
   font-size: 60px;
-  color: #B8B8B8;
+  color: $color_02;
   // color: #ff44a0;
   font-family: "3270 Nerd Font";
   text-shadow: none;
@@ -87,7 +94,7 @@
 
 .cancel{
   font-size: 60px;
-  color: #B8B8B8;
+  color: $color_02;
   font-family: "3270 Nerd Font";
   text-shadow: none;
 }

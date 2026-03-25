@@ -152,9 +152,15 @@
 
 (defwidget separator_02 []
     (box
-        (label
-            :class "separator-text-01"
-            :text   "e"
+        (button
+            :class  "glass_button"
+            :onclick "~/.eww/target/release/eww -c ~/.config/niri/widget_eww/widget_starcarft  open adjutora-icon-glass &"
+            :onrightclick "~/.eww/target/release/eww -c ~/.config/niri/widget_eww/widget_starcarft  kill &"
+            :tooltip "Adjutant"
+            (label
+                :class "separator-text-01"
+                :text   "e"
+            )
         )
     )
 )
@@ -197,7 +203,7 @@
     (box
         :orientation "h"
         :space-evenly "true"
-        :spacing 55 ;; "40" ;; "110"
+        :spacing 0 ;; "40" ;; "110"
         (box
             :orientation "h"
             :halign "left"

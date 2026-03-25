@@ -31,11 +31,11 @@
     :stacking "fg" 
     :geometry 
     (geometry 
-        :x "1%" 
+        :x "3%" 
         :y "10px" 
         :width "5%" 
         :height "30px"
-        :anchor "top right"
+        :anchor "top center"
     )
     (box
         :orientation "v" 
