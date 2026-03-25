@@ -2,6 +2,7 @@
   background-color: rgba(0, 36, 36, 0.2); 
   padding: 4px;
   border-radius: 6px;
+  // border: 5px double #1c1b22;
 }
 
 
@@ -26,6 +27,7 @@ $color_02: rgba(255, 255, 231);
   border-radius: 5px;
   padding: 0px;
   min-width: 60px;
+  border: 5px outset #1c1b22;
 }
 
 .box-inf-system_02 {
@@ -33,6 +35,7 @@ $color_02: rgba(255, 255, 231);
   border-radius: 5px;
   padding: 0px;
   min-width: 90px;
+  border: 5px outset #1c1b22;
 }
 
 
@@ -41,6 +44,7 @@ $color_02: rgba(255, 255, 231);
   border-radius: 5px;
   padding: 0px;
   min-width: 130px;
+  border: 5px outset #1c1b22;
 }
 
 .glass_button {
@@ -56,7 +60,7 @@ $color_02: rgba(255, 255, 231);
 .glass_box {
   background: rgba(255, 39, 23, 0);
   border-radius: 5px;
-  padding: 5px;
+  padding: 1px;
 }
 
 
@@ -126,3 +130,16 @@ $color_02: rgba(255, 255, 231);
   color: #e2e2e2;
   font-family: "starcraftt";
 }
+
+
+// - none — Sin borde.
+// - solid — Línea sólida (normal).
+// - dashed — Línea discontinua (rayada).
+// - dotted — Línea punteada.
+// - double — Doble línea (como en tu ejemplo).
+// - groove — Borde con efecto de ranura (con relieve).
+// - ridge — Borde con efecto de cresta (inverso a groove).
+// - inset — Borde en relieve hacia adentro (efecto hundido).
+// - outset — Borde en relieve hacia afuera (efecto sobresaliente).
+
+

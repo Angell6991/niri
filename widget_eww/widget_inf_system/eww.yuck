@@ -197,7 +197,7 @@
     (box
         :orientation "h"
         :space-evenly "true"
-        :spacing 100 ;; "40" ;; "110"
+        :spacing 55 ;; "40" ;; "110"
         (box
             :orientation "h"
             :halign "left"
