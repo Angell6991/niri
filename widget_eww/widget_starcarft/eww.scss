@@ -4,8 +4,19 @@
   padding: 0px;
 }
 
+.glass_button {
+  background: rgba(29, 29, 29, 0);
+  box-shadow: none;
+  border: none;
+  border-color: #FFFFFF;
+  padding: 0;
+  font-size: 20px;
+  color: #00CCDE;
+}
+
 .gif-container_00 {
-  background-color: rgba(29, 29, 29, 0.2);
+  // background-color: rgba(29, 29, 29, 0.2);
+  background-color: rgba(0, 36, 36, 0.2);
   border-radius: 10px;
   padding: 5px;
 }

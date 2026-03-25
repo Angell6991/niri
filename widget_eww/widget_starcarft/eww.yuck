@@ -3,14 +3,19 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
-(defwidget icon-lock []
-    (box
-        :class "gif-container_00"
-        (box 
-            :class "gif-container_01"
-            (image
-                :path   "adjutora_gif.gif"
-            ) 
+(defwidget ICON-ADJUTORA []
+    (button
+        :onclick "~/.eww/target/release/eww -c ~/.config/niri/widget_eww/widget_power_menu open bar-window &" 
+        :class "glass_button"
+        :tooltip "Power menu"
+        (box
+            :class "gif-container_00"
+            (box 
+                :class "gif-container_01"
+                (image
+                    :path   "adjutora_gif.gif"
+                ) 
+            )
         )
     )
 )
@@ -27,7 +32,7 @@
     :geometry 
     (geometry 
         :x "1%" 
-        :y "15px" 
+        :y "10px" 
         :width "5%" 
         :height "30px"
         :anchor "top right"
@@ -36,7 +41,7 @@
         :orientation "v" 
         :spacing "10"           ;;45
         ;:space-evenly "false"   ;;espacio estre widget valor buleano: true ó false
-        (icon-lock)
+        (ICON-ADJUTORA)
     )
 )
 

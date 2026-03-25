@@ -129,40 +129,6 @@
     )
 )
 
-(defwidget POWER_MENU []
-    (button
-        :onclick "~/.eww/target/release/eww -c ~/.config/niri/widget_eww/widget_power_menu open bar-window &" 
-        :class "glass_button"
-        :tooltip "Power menu"
-        (box
-            :class "box-inf-system_00"
-            :halign "center"
-            :space-evenly "false"
-            (label
-                :class "power-label"
-                :text " "
-            )
-        )
-    )
-)
-
-(defwidget GAMES []
-    (button
-        :onclick "retroarch &" 
-        :class "glass_button"
-        :tooltip "retroarch"
-        (box
-            :class "box-inf-system_00"
-            :halign "center"
-            :space-evenly "false"
-            (label
-                :class "app-label"
-                :text "󰣙 "
-            )
-        )
-    )
-)
-
 
 ;;-------------------Sepator--------------------;;
 
@@ -175,6 +141,41 @@
     )
 )
 
+(defwidget separator_01 []
+    (box
+        (label
+            :class "separator-text-01"
+            :text   "d"
+        )
+    )
+)
+
+(defwidget separator_02 []
+    (box
+        (label
+            :class "separator-text-01"
+            :text   "e"
+        )
+    )
+)
+
+(defwidget separator_03 []
+    (box
+        (label
+            :class "separator-text-01"
+            :text   "g"
+        )
+    )
+)
+
+(defwidget separator_04 []
+    (box
+        (label
+            :class "separator-text-01"
+            :text   "f"
+        )
+    )
+)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;-------------------def_var---------------------;;
@@ -196,13 +197,13 @@
     (box
         :orientation "h"
         :space-evenly "true"
-        :spacing "40" ;; "110"
+        :spacing 100 ;; "40" ;; "110"
         (box
             :orientation "h"
             :halign "left"
             :space-evenly "false"
             :spacing "9"
-            (GAMES)
+            (separator_01)
             (BATTERY_INF)
             (separator)
             (RAM_INF)
@@ -212,6 +213,10 @@
         (box
             :orientation "h"
             :halign "center"
+            :spacing "15"
+            (separator_03)
+            (separator_02)
+            (separator_04)
         )
         (box
             :orientation "h"
@@ -223,8 +228,7 @@
             (DAY)
             (separator)
             (CLOCK)
-            (POWER_MENU)
-
+            (separator_01)
         )
     )
 )

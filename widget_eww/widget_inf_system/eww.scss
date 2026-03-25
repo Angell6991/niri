@@ -1,5 +1,5 @@
 .widget_inf {
-  background-color: rgba(15, 01, 19, 0.1); 
+  background-color: rgba(0, 36, 36, 0.2); 
   padding: 4px;
   border-radius: 6px;
 }
@@ -11,7 +11,7 @@
 
 
 // Definir una variable de color
-$color_01: rgba(29, 29, 29, 0.4);  
+$color_01: rgba(28, 27, 34, 0.8);  
 $color_02: rgba(255, 255, 231); 
 
 
@@ -110,22 +110,6 @@ $color_02: rgba(255, 255, 231);
   // font-family: "Inconsolata NF";
 }
 
-//////////////////////////////////
-////-----View_workspaces------////
-//////////////////////////////////
-
-.desk-box_01 {
-  background-color: rgba(29, 29, 29, 0); 
-  padding: 8px;
-  border-radius: 10px; 
-}
-
-.desk-test {
-  font-size: 17px;
-  color: rgba(29, 29, 29);
-  font-family: "Inconsolata NF";
-}
-
 
 //////////////////////////////////
 ////-----View_Separator-------////
@@ -137,4 +121,8 @@ $color_02: rgba(255, 255, 231);
   font-family: "Inconsolata NF";
 }
 
-
+.separator-text-01 {
+  font-size: 18px;
+  color: #e2e2e2;
+  font-family: "starcraftt";
+}
