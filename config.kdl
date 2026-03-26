@@ -235,6 +235,10 @@ window-rule {
     match   app-id="localsend"
     match   app-id="io.github.seadve.Mousai"
     
+    match	app-id="org.matplotlib.Matplotlib3"
+    match	app-id="Matplotlib"
+    match	app-id="Tk"
+
     open-on-workspace   "terminal"
     open-focused    true
 }
@@ -242,9 +246,7 @@ window-rule {
 window-rule {
     match   app-id="org.pwmt.zathura"
     
-    match	app-id="org.matplotlib.Matplotlib3"
-    match	app-id="Matplotlib"
-    match	app-id="Tk"
+
     match	app-id="eog"
     match	app-id="org.gnome.eog"
     match	app-id="python3.12"
