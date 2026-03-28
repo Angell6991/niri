@@ -290,8 +290,9 @@ binds {
 
     ///-----------terminal_menu_salir_close_secion----------/// 
     // Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
+    // Mod+space hotkey-overlay-title="Open: fuzzel"{ spawn "fuzzel"; }
     Mod+Return hotkey-overlay-title="Open a Terminal" { spawn "ghostty"; }
-    Mod+space hotkey-overlay-title="Open: fuzzel"{ spawn "fuzzel"; }
+    Mod+space hotkey-overlay-title="Open: fuzzel"{ spawn-sh "~/.config/fuzzel/fuzzel-switch.sh"; }
     Mod+BackSpace repeat=false { close-window; }
     Mod+Ctrl+Q { quit; }
     Mod+O repeat=false { toggle-overview; }
