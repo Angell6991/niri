@@ -139,6 +139,7 @@ spawn-at-startup "udiskie"
 spawn-at-startup "hypridle"
 spawn-at-startup "awww-daemon"
 spawn-sh-at-startup "~/.config/niri/random_imagen.sh"
+spawn-at-startup "sh" "-c" "wlsunset -S 6:00 -s 19:00 -t 5500 -T 6500 -d 2" 
 // spawn-at-startup "sh" "-c" "qs -p ~/.config/quickshell/bar/shell.qml
 // spawn-sh-at-startup "~/.config/niri/random_gif.sh"
 // spawn-at-startup "sh" "-c" "~/.config/hypr/random_imagen.sh"
