@@ -154,8 +154,8 @@
     (box
         (button
             :class  "glass_button"
-            :onclick "~/.eww/target/release/eww -c ~/.config/niri/widget_eww/widget_starcarft  open adjutora-icon-glass &"
-            :onrightclick "~/.eww/target/release/eww -c ~/.config/niri/widget_eww/widget_starcarft  kill &"
+            :onclick "~/.eww/target/release/eww -c ~/.config/niri/eww/widget_starcarft  open adjutora-icon-glass &"
+            :onrightclick "~/.eww/target/release/eww -c ~/.config/niri/eww/widget_starcarft  kill &"
             :tooltip "Adjutant"
             (label
                 :class "separator-text-01"

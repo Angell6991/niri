@@ -10,7 +10,7 @@
         :class "box-power"
         :spacing "30"
 
-        (button :onclick "~/.eww/target/release/eww -c ~/.config/niri/widget_eww/widget_power_menu/ kill && sleep 1 && poweroff" 
+        (button :onclick "~/.eww/target/release/eww -c ~/.config/niri/eww/widget_power_menu/ kill && sleep 1 && poweroff" 
             :class "button-power"
             :tooltip "poweroff"
             (label 
@@ -19,7 +19,7 @@
             )
         )
 
-        (button :onclick "~/.eww/target/release/eww -c ~/.config/niri/widget_eww/widget_power_menu/ kill && sleep 1 && hyprlock" 
+        (button :onclick "~/.eww/target/release/eww -c ~/.config/niri/eww/widget_power_menu/ kill && sleep 1 && hyprlock" 
             :class "button-power"
             :tooltip "lock"
             (label 
@@ -28,7 +28,7 @@
             )
         )
 
-        (button :onclick "~/.eww/target/release/eww -c ~/.config/niri/widget_eww/widget_power_menu/ kill && sleep 1 && pkill niri" 
+        (button :onclick "~/.eww/target/release/eww -c ~/.config/niri/eww/widget_power_menu/ kill && sleep 1 && pkill niri" 
             :class "button-power"
             :tooltip "close secion"
             (label
@@ -37,7 +37,7 @@
             )
         )
 
-        (button :onclick "~/.eww/target/release/eww -c ~/.config/niri/widget_eww/widget_power_menu/ kill && sleep 1 && systemctl reboot" 
+        (button :onclick "~/.eww/target/release/eww -c ~/.config/niri/eww/widget_power_menu/ kill && sleep 1 && systemctl reboot" 
             :class "button-power"
             :tooltip "reboot"
             (label 
@@ -49,7 +49,7 @@
             )
         )
 
-        (button :onclick "~/.eww/target/release/eww -c ~/.config/niri/widget_eww/widget_power_menu/ kill" 
+        (button :onclick "~/.eww/target/release/eww -c ~/.config/niri/eww/widget_power_menu/ kill" 
             :class "button-power"
             :tooltip "reboot"
             (label 

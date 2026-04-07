@@ -5,7 +5,7 @@
 
 (defwidget ICON-ADJUTORA []
     (button
-        :onclick "~/.eww/target/release/eww -c ~/.config/niri/widget_eww/widget_power_menu open bar-window &" 
+        :onclick "~/.eww/target/release/eww -c ~/.config/niri/eww/widget_power_menu open bar-window &" 
         :class "glass_button"
         :tooltip "Power menu"
         (box
